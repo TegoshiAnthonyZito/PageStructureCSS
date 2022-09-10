@@ -52,18 +52,21 @@
 **  |-------------------------------------------------------------------|
 **  |5. Escolha se flex deve ou não dar wrap com ".wrap" ou ".nowrap";  |
 **  |-------------------------------------------------------------------|
-**  |6. Escolha se o elemento deve ou não ser scrollable com ".s" ou    |
+**  |6. Escolha se flex deve ou não ter gap e, se tiver, qual seu       |
+**  |tamanho (".g1", ".g2", ".g3", ".g4"), indo de 5 em 5px;            |
+**  |-------------------------------------------------------------------|
+**  |7. Escolha se o elemento deve ou não ser scrollable com ".s" ou    |
 **  |".ns" e em quais dimensões de tela deve permanecer assim;          |
 **  |-------------------------------------------------------------------|
-**  |7. Toda classe, exceto a ".i", pode ser seguida por um tamanho     |
+**  |8. Toda classe, exceto a ".i", pode ser seguida por um tamanho     |
 **  |entre "lsm", "hsm", "lmd", "hmd", "llg", "hlg";                    |
 **  |-------------------------------------------------------------------|
-**  |8. Todo elemento pode ter suas dimensões definidas em porcentagens |
+**  |9. Todo elemento pode ter suas dimensões definidas em porcentagens |
 **  |do elemento pai entre 0 e 12, além dos min, max e auto;            |
 **  |-------------------------------------------------------------------|
-**  |9. Containers servem tanto como filhos quanto como pais das flex;  |
+**  |10. Containers servem tanto como filhos quanto como pais das flex; |
 **  |-------------------------------------------------------------------|
-**  |10. As mediaqueries do framework podem ser usadas para produzir    |
+**  |11. As mediaqueries do framework podem ser usadas para produzir    |
 **  |diferentes layouts a depender do tamanho da tela do dispositivo;   |
 **  +-------------------------------------------------------------------+
 **
@@ -171,6 +174,12 @@
 .s > * {overflow: visible;}
 .ns {overflow: visible;}
 
+/*--/*--GAP_BETWEEN_ELEMENTS--*/
+.g1 {gap: 5px;}
+.g2 {gap: 10px;}
+.g3 {gap: 15px;}
+.g4 {gap: 20px;}
+
 /*--DISPOSITIVOS_LOW_SMALL--*/
 @media only screen and (min-width: 0px) {
     /*--/*--ITENS--*/
@@ -251,6 +260,12 @@
     .s-lsm {overflow: auto;}
     .s-lsm > * {overflow: visible;}
     .ns-lsm {overflow: visible;}
+
+    /*--/*--GAP_BETWEEN_ELEMENTS--*/
+    .g1-lsm {gap: 5px;}
+    .g2-lsm {gap: 10px;}
+    .g3-lsm {gap: 15px;}
+    .g4-lsm {gap: 20px;}
 }
 
 /*--DISPOSITIVOS_HIGH_SMALL--*/
@@ -333,6 +348,12 @@
     .s-hsm {overflow: auto;}
     .s-hsm > * {overflow: visible;}
     .ns-hsm {overflow: visible;}
+
+    /*--/*--GAP_BETWEEN_ELEMENTS--*/
+    .g1-hsm {gap: 5px;}
+    .g2-hsm {gap: 10px;}
+    .g3-hsm {gap: 15px;}
+    .g4-hsm {gap: 20px;}
 }
 
 /*--DISPOSITIVOS_LOW_MEDIUM--*/
@@ -415,6 +436,12 @@
     .s-lmd {overflow: auto;}
     .s-lmd > * {overflow: visible;}
     .ns-lmd {overflow: visible;}
+
+    /*--/*--GAP_BETWEEN_ELEMENTS--*/
+    .g1-lmd {gap: 5px;}
+    .g2-lmd {gap: 10px;}
+    .g3-lmd {gap: 15px;}
+    .g4-lmd {gap: 20px;}
 }
 
 /*--DISPOSITIVOS_HIGH_MEDIUM--*/
@@ -497,6 +524,12 @@
     .s-hmd {overflow: auto;}
     .s-hmd > * {overflow: visible;}
     .ns-hmd {overflow: visible;}
+
+    /*--/*--GAP_BETWEEN_ELEMENTS--*/
+    .g1-hmd {gap: 5px;}
+    .g2-hmd {gap: 10px;}
+    .g3-hmd {gap: 15px;}
+    .g4-hmd {gap: 20px;}
 }
 
 /*--DISPOSITIVOS_LOW_LARGE--*/
@@ -579,6 +612,12 @@
     .s-llg {overflow: auto;}
     .s-llg > * {overflow: visible;}
     .ns-llg {overflow: visible;}
+
+    /*--/*--GAP_BETWEEN_ELEMENTS--*/
+    .g1-llg {gap: 5px;}
+    .g2-llg {gap: 10px;}
+    .g3-llg {gap: 15px;}
+    .g4-llg {gap: 20px;}
 }
 
 /*--DISPOSITIVOS_HIGH_LARGE--*/
@@ -661,4 +700,10 @@
     .s-hlg {overflow: auto;}
     .s-hlg > * {overflow: visible;}
     .ns-hlg {overflow: visible;}
+
+    /*--/*--GAP_BETWEEN_ELEMENTS--*/
+    .g1-hlg {gap: 5px;}
+    .g2-hlg {gap: 10px;}
+    .g3-hlg {gap: 15px;}
+    .g4-hlg {gap: 20px;}
 }
