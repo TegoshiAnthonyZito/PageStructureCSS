@@ -16,6 +16,8 @@
 **  |-------------------------------------------------------------------|
 **  |- ".g*" é o tamanho do gap de uma row ou column                    |
 **  |-------------------------------------------------------------------|
+**  |- ".o*" é ordem do elemento em uma row ou column                   |
+**  |-------------------------------------------------------------------|
 **  |- ".s" é um elemento scrollable e ".ns" é um elemento não          |
 **  |scrollable                                                         |
 **  |-------------------------------------------------------------------|
@@ -62,18 +64,21 @@
 **  |7. Escolha se flex deve ter ou não gap e, se tiver, qual seu       |
 **  |tamanho (".g1", ".g2", ".g3" ou ".g4"), indo de 5 em 5px;          |
 **  |-------------------------------------------------------------------|
-**  |8. Escolha se o elemento deve ou não ser scrollable com ".s" ou    |
+**  |8. Escolha se o elemento deve ter uma ordem específica entre os    |
+**  |elementos da row ou da column (".o1" até ".o12");                  |
+**  |-------------------------------------------------------------------|
+**  |9. Escolha se o elemento deve ou não ser scrollable com ".s" ou    |
 **  |".ns" e em quais dimensões de tela deve permanecer assim;          |
 **  |-------------------------------------------------------------------|
-**  |9. Toda classe, exceto a ".i", pode ser seguida por um tamanho     |
+**  |10. Toda classe, exceto a ".i", pode ser seguida por um tamanho    |
 **  |entre "lsm", "hsm", "lmd", "hmd", "llg", "hlg";                    |
 **  |-------------------------------------------------------------------|
-**  |10. Todo elemento pode ter suas dimensões definidas em porcentagens|
+**  |11. Todo elemento pode ter suas dimensões definidas em porcentagens|
 **  |do elemento pai entre 0 e 12, além dos min, max e auto;            |
 **  |-------------------------------------------------------------------|
-**  |11. Containers servem tanto como filhos quanto como pais das flex; |
+**  |12. Containers servem tanto como filhos quanto como pais das flex; |
 **  |-------------------------------------------------------------------|
-**  |12. As mediaqueries do framework podem ser usadas para produzir    |
+**  |13. As mediaqueries do framework podem ser usadas para produzir    |
 **  |diferentes layouts a depender do tamanho da tela do dispositivo;   |
 **  +-------------------------------------------------------------------+
 **
@@ -151,6 +156,20 @@
 .g2 {gap: 10px;}
 .g3 {gap: 15px;}
 .g4 {gap: 20px;}
+
+/*--/*--CHILDREN_ORDER--*/
+.o1 {order: 1;}
+.o2 {order: 2;}
+.o3 {order: 3;}
+.o4 {order: 4;}
+.o5 {order: 5;}
+.o6 {order: 6;}
+.o7 {order: 7;}
+.o8 {order: 8;}
+.o9 {order: 9;}
+.o10 {order: 10;}
+.o11 {order: 11;}
+.o12 {order: 12;}
 
 /*--/*--LARGURA--*/
 .wauto {width: auto;}
@@ -244,6 +263,20 @@
     .g2-lsm {gap: 10px;}
     .g3-lsm {gap: 15px;}
     .g4-lsm {gap: 20px;}
+
+    /*--/*--CHILDREN_ORDER--*/
+    .o1-lsm {order: 1;}
+    .o2-lsm {order: 2;}
+    .o3-lsm {order: 3;}
+    .o4-lsm {order: 4;}
+    .o5-lsm {order: 5;}
+    .o6-lsm {order: 6;}
+    .o7-lsm {order: 7;}
+    .o8-lsm {order: 8;}
+    .o9-lsm {order: 9;}
+    .o10-lsm {order: 10;}
+    .o11-lsm {order: 11;}
+    .o12-lsm {order: 12;}
 
     /*--/*--LARGURA--*/
     .wauto-lsm {width: auto;}
@@ -339,6 +372,20 @@
     .g3-hsm {gap: 15px;}
     .g4-hsm {gap: 20px;}
 
+    /*--/*--CHILDREN_ORDER--*/
+    .o1-hsm {order: 1;}
+    .o2-hsm {order: 2;}
+    .o3-hsm {order: 3;}
+    .o4-hsm {order: 4;}
+    .o5-hsm {order: 5;}
+    .o6-hsm {order: 6;}
+    .o7-hsm {order: 7;}
+    .o8-hsm {order: 8;}
+    .o9-hsm {order: 9;}
+    .o10-hsm {order: 10;}
+    .o11-hsm {order: 11;}
+    .o12-hsm {order: 12;}
+
     /*--/*--LARGURA--*/
     .wauto-hsm {width: auto;}
     .wmin-hsm {width: min-content;}
@@ -432,6 +479,20 @@
     .g2-lmd {gap: 10px;}
     .g3-lmd {gap: 15px;}
     .g4-lmd {gap: 20px;}
+
+    /*--/*--CHILDREN_ORDER--*/
+    .o1-lmd {order: 1;}
+    .o2-lmd {order: 2;}
+    .o3-lmd {order: 3;}
+    .o4-lmd {order: 4;}
+    .o5-lmd {order: 5;}
+    .o6-lmd {order: 6;}
+    .o7-lmd {order: 7;}
+    .o8-lmd {order: 8;}
+    .o9-lmd {order: 9;}
+    .o10-lmd {order: 10;}
+    .o11-lmd {order: 11;}
+    .o12-lmd {order: 12;}
 
     /*--/*--LARGURA--*/
     .wauto-lmd {width: auto;}
@@ -527,6 +588,20 @@
     .g3-hmd {gap: 15px;}
     .g4-hmd {gap: 20px;}
 
+    /*--/*--CHILDREN_ORDER--*/
+    .o1-hmd {order: 1;}
+    .o2-hmd {order: 2;}
+    .o3-hmd {order: 3;}
+    .o4-hmd {order: 4;}
+    .o5-hmd {order: 5;}
+    .o6-hmd {order: 6;}
+    .o7-hmd {order: 7;}
+    .o8-hmd {order: 8;}
+    .o9-hmd {order: 9;}
+    .o10-hmd {order: 10;}
+    .o11-hmd {order: 11;}
+    .o12-hmd {order: 12;}
+
     /*--/*--LARGURA--*/
     .wauto-hmd {width: auto;}
     .wmin-hmd {width: min-content;}
@@ -621,6 +696,20 @@
     .g3-llg {gap: 15px;}
     .g4-llg {gap: 20px;}
 
+    /*--/*--CHILDREN_ORDER--*/
+    .o1-llg {order: 1;}
+    .o2-llg {order: 2;}
+    .o3-llg {order: 3;}
+    .o4-llg {order: 4;}
+    .o5-llg {order: 5;}
+    .o6-llg {order: 6;}
+    .o7-llg {order: 7;}
+    .o8-llg {order: 8;}
+    .o9-llg {order: 9;}
+    .o10-llg {order: 10;}
+    .o11-llg {order: 11;}
+    .o12-llg {order: 12;}
+
     /*--/*--LARGURA--*/
     .wauto-llg {width: auto;}
     .wmin-llg {width: min-content;}
@@ -714,6 +803,20 @@
     .g2-hlg {gap: 10px;}
     .g3-hlg {gap: 15px;}
     .g4-hlg {gap: 20px;}
+
+    /*--/*--CHILDREN_ORDER--*/
+    .o1-hlg {order: 1;}
+    .o2-hlg {order: 2;}
+    .o3-hlg {order: 3;}
+    .o4-hlg {order: 4;}
+    .o5-hlg {order: 5;}
+    .o6-hlg {order: 6;}
+    .o7-hlg {order: 7;}
+    .o8-hlg {order: 8;}
+    .o9-hlg {order: 9;}
+    .o10-hlg {order: 10;}
+    .o11-hlg {order: 11;}
+    .o12-hlg {order: 12;}
 
     /*--/*--LARGURA--*/
     .wauto-hlg {width: auto;}
