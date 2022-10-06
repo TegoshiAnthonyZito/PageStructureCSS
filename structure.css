@@ -212,6 +212,14 @@
 .s > * {overflow: visible;}
 .ns {overflow: visible;}
 
+.sx {overflow-x: auto;}
+.sx > * {overflow-x: visible;}
+.nsx {overflow-x: visible;}
+
+.sy {overflow-y: auto;}
+.sy > * {overflow-y: visible;}
+.nsy {overflow-y: visible;}
+
 /*--DISPOSITIVOS_LOW_SMALL--*/
 @media only screen and (min-width: 0px) {
     /*--/*--ITENS--*/
@@ -318,6 +326,14 @@
     .s-lsm {overflow: auto;}
     .s-lsm > * {overflow: visible;}
     .ns-lsm {overflow: visible;}
+
+    .sx-lsm {overflow-x: auto;}
+    .sx-lsm > * {overflow-x: visible;}
+    .nsx-lsm {overflow-x: visible;}
+
+    .sy-lsm {overflow-y: auto;}
+    .sy-lsm > * {overflow-y: visible;}
+    .nsy-lsm {overflow-y: visible;}
 }
 
 /*--DISPOSITIVOS_HIGH_SMALL--*/
@@ -426,6 +442,14 @@
     .s-hsm {overflow: auto;}
     .s-hsm > * {overflow: visible;}
     .ns-hsm {overflow: visible;}
+
+    .sx-hsm {overflow-x: auto;}
+    .sx-hsm > * {overflow-x: visible;}
+    .nsx-hsm {overflow-x: visible;}
+
+    .sy-hsm {overflow-y: auto;}
+    .sy-hsm > * {overflow-y: visible;}
+    .nsy-hsm {overflow-y: visible;}
 }
 
 /*--DISPOSITIVOS_LOW_MEDIUM--*/
@@ -534,6 +558,14 @@
     .s-lmd {overflow: auto;}
     .s-lmd > * {overflow: visible;}
     .ns-lmd {overflow: visible;}
+
+    .sx-lmd {overflow-x: auto;}
+    .sx-lmd > * {overflow-x: visible;}
+    .nsx-lmd {overflow-x: visible;}
+
+    .sy-lmd {overflow-y: auto;}
+    .sy-lmd > * {overflow-y: visible;}
+    .nsy-lmd {overflow-y: visible;}
 }
 
 /*--DISPOSITIVOS_HIGH_MEDIUM--*/
@@ -642,6 +674,14 @@
     .s-hmd {overflow: auto;}
     .s-hmd > * {overflow: visible;}
     .ns-hmd {overflow: visible;}
+
+    .sx-hmd {overflow-x: auto;}
+    .sx-hmd > * {overflow-x: visible;}
+    .nsx-hmd {overflow-x: visible;}
+
+    .sy-hmd {overflow-y: auto;}
+    .sy-hmd > * {overflow-y: visible;}
+    .nsy-hmd {overflow-y: visible;}
 }
 
 /*--DISPOSITIVOS_LOW_LARGE--*/
@@ -750,6 +790,14 @@
     .s-llg {overflow: auto;}
     .s-llg > * {overflow: visible;}
     .ns-llg {overflow: visible;}
+
+    .sx-llg {overflow-x: auto;}
+    .sx-llg > * {overflow-x: visible;}
+    .nsx-llg {overflow-x: visible;}
+
+    .sy-llg {overflow-y: auto;}
+    .sy-llg > * {overflow-y: visible;}
+    .nsy-llg {overflow-y: visible;}
 }
 
 /*--DISPOSITIVOS_HIGH_LARGE--*/
@@ -858,4 +906,12 @@
     .s-hlg {overflow: auto;}
     .s-hlg > * {overflow: visible;}
     .ns-hlg {overflow: visible;}
+
+    .sx-hlg {overflow-x: auto;}
+    .sx-hlg > * {overflow-x: visible;}
+    .nsx-hlg {overflow-x: visible;}
+
+    .sy-hlg {overflow-y: auto;}
+    .sy-hlg > * {overflow-y: visible;}
+    .nsy-hlg {overflow-y: visible;}
 }
